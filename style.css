@@ -1,0 +1,103 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    color: #333;
+}
+
+
+#booklibrary {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.book-card {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.book-card p {
+    margin: 10px 0;
+    color: #666;
+}
+
+#openForm {
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#openForm:hover {
+    background-color: #0056b3;
+}
+
+
+.popup {
+    display: none;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.popup form {
+    display: flex;
+    flex-direction: column;
+}
+
+.popup label {
+    margin-bottom: 5px;
+}
+
+.popup input[type="text"],
+.popup input[type="checkbox"] {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#submitButton,
+#closeForm {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+#submitButton {
+    background-color: #28a745;
+    color: white;
+}
+
+#closeForm {
+    background-color: #dc3545;
+    color: white;
+}
+
+#submitButton:hover {
+    background-color: #218838;
+}
+
+#closeForm:hover {
+    background-color: #c82333;
+}
